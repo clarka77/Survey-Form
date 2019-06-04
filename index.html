@@ -17,28 +17,221 @@
   <meta name="geo.region" content="US-KS" />
   <meta name="ICBM" content="39.114053, -94.627464" />
 
+  <title>FCC Survey Form</title>
+
   <!-- CSS -->
-  <link rel="stylesheet" href="css/bootstrap-custom.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
   <link rel="stylesheet" href="css/main.css">
 
   <!-- JS -->
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
 </head>
 
 <body>
 
+  <section class="section">
+    <div class="container">
+      <div class="title level">
+        <h1 class="level-item has-text-centered" id="title">'Newbie' Developer Survey Form</h1>
+      </div>
+      <br>
+      <form id="survey-form">
+        <div class="level">
+          <p id="description" class="has-text-centered">This is the Free Code Camp 'Newbie' Developer Survey Form. This form was developed for your enjoyment. Take your time to fill it out completely and we will compile the data for everyone's enjoyment. Thanks!</p>
+        </div>
+        <br>
+        <div class="field">
+          <label class="label" id="name-label">Name</label>
+          <div class="control">
+            <input id="name" class="input" type="text" placeholder="Name" required>
+          </div>
+        </div>
 
+        <div class="field">
+          <label class="label" id="email-label">Email</label>
+          <div class="control has-icons-left">
+            <input id="email" class="input" type="email" placeholder="Email" required>
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
 
-  <!-- 
+        <div class="field">
+          <label class="label" id="number-label">Age</label>
+          <div class="control">
+            <input id="number" type="number" min="5" max="105" placeholder="Age" required>
+          </div>
+        </div>
+        <br>
 
-Hello Camper!
+        <div class="control">
+          <p>
+            <strong>Sex</strong>
+          </p>
+          <label class="radio">
+            <input type="radio" name="sex" value="man"> Man
+          </label>
+          <label class="radio">
+            <input type="radio" name="sex" value="other" checked> Other
+          </label>
+          <label class="radio">
+            <input type="radio" name="sex" value="woman"> Woman
+          </label>
+          <label class="radio" disabled>
+            <input type="radio" name="sex" value="not human" disabled> Not Human
+          </label>
+        </div>
+        <br>
 
-For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+        <div class="field">
+          <label class="label">Favorite CSS Framework?</label>
+          <div class="control">
+            <div class="select" id="dropdown">
+              <select>
+                <option>Bulma</option>
+                <option>CSS Grid</option>
+                <option>Bootstrap</option>
+                <option>Materialize CSS</option>
+                <option>Semantic UI</option>
+                <option>Material UI</option>
+                <option>UIKit</option>
+                <option>Foundation</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <br>
 
-- The freeCodeCamp Team 
+        <p>
+          <strong>What Type of Developer are You?</strong>
+        </p>
+        <label class="checkbox">
+          <input type="checkbox" name="developer1" value="frontend">
+          <a href="https://en.wikipedia.org/wiki/Front-end_web_development" target="_blank">Front-end Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer2" value="backend">
+          <a href="https://www.techopedia.com/definition/29568/back-end-developer" target="_blank">Backend Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer3" value="fullstack">
+          <a href="https://codeup.com/what-is-a-full-stack-developer/" target="_blank">Full-stack Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer4" value="middletier">
+          <a href="https://www.pcmag.com/encyclopedia/term/47011/middle-tier" target="_blank">Middle-Tier Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer5" value="web">
+          <a href="https://en.wikipedia.org/wiki/Web_developer" target="_blank">Web Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer6" value="desktop">
+          <a href="https://www.quora.com/Can-I-become-a-desktop-developer-these-days-1" target="_blank">Desktop Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer7" value="mobile">
+          <a href="https://www.webopedia.com/TERM/M/mobile-developer.html" target="_blank">Mobile Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer8" value="graphics">
+          <a href="https://careers.stateuniversity.com/pages/7754/Graphics-Programmer.html" target="_blank">Graphics Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer9" value="game">
+          <a href="https://www.gamedesigning.org/career/game-developer/" target="_blank">Game Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer10" value="datascientist">
+          <a href="https://datascience.berkeley.edu/about/what-is-data-science/" target="_blank">Data Scientist</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer11" value="bigdata">
+          <a href="https://www.greycampus.com/opencampus/big-data-developer/about-big-data-developer" target="_blank">Big Data Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer12" value="devops">
+          <a href="https://www.webopedia.com/TERM/D/devops_development_operations.html" target="_blank">DevOps Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer13" value="crm">
+          <a href="https://community.dynamics.com/crm/f/117/t/240024" target="_blank">CRM Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer14" value="sdet">
+          <a href="https://www.guru99.com/software-developer-engineer-test-sdet.html" target="_blank">Software Development Engineer in Test (SDET)</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer15" value="embedded">
+          <a href="https://en.wikipedia.org/wiki/Embedded_software" target="_blank">Embedded Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer16" value="highlevel">
+          <a href="https://en.wikipedia.org/wiki/High-level_programming_language" target="_blank">High-Level Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer17" value="lowlevel">
+          <a href="https://www.quora.com/What-is-a-low-level-developer" target="_blank">Low-Level Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer18" value="wordpress">
+          <a href="https://www.cminds.com/whats-a-wordpress-developer-anyway/" target="_blank">WordPress Developer</a>
+        </label>
+        <br>
+        <label class="checkbox">
+          <input type="checkbox" name="developer19" value="security">
+          <a href="https://www.cyberdegrees.org/jobs/security-software-developer/" target="_blank">Security Developer</a>
+        </label>
+        <br>
+        <br>
 
--->
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Comments"></textarea>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox" value="agree"> I agree to the
+              <a href="https://terms-of-service.freecodecamp.org/" target="_blank">terms and conditions</a>
+            </label>
+          </div>
+        </div>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link" id="submit">Submit</button>
+          </div>
+        </div>
+    </div>
+    </form>
+    </div>
+  </section>
 
 </body>
 
